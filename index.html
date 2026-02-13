@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deep Link Test</title>
+</head>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;flex-direction:column;font-family:sans-serif;">
+  
+  <h2>Deep Link Test</h2>
+
+  <button onclick="openApp()" style="padding:12px 20px;font-size:16px;">
+    Open ClinicalSuite App
+  </button>
+
+  <script>
+    function openApp() {
+      window.location.href = "clinicalsuite://auth/callback?code=TEST123";
+    }
+  </script>
+
+</body>
+</html>
